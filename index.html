@@ -28,12 +28,23 @@
 
 <body>
     <div id="app">
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/Logo.png" alt="logo">
+                    <h1>{{title}}</h1>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <ul>
+                <li v-for="task in todo">{{task.text}}</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
     </div>
 </body>
 
