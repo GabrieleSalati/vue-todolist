@@ -25,10 +25,24 @@ const app = createApp({
                     text: "Preparare le difese.",
                     done: false
                 }
-            ]
+            ],
+
+            newTask: {
+                text: "",
+                done: false
+            },
         };
     },
 
+    methods: {
+        addTask() {
+            this.todo.push(this.newTask);
+        },
+
+        removeTask(index) {
+            this.todo.splice(index, 1);
+        },
+    },
 });
 
 app.mount("#app");
