@@ -38,11 +38,7 @@
         </nav>
         <div class="container">
             <ul>
-                <li v-for="task in todo">{{task.text}}</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li v-for="task in todo" :class="(task.done == true) ? 'done-task' : ''">{{task.text}}</li>
             </ul>
         </div>
     </div>

@@ -5,3 +5,7 @@ h1 {
 ul {
     list-style: none;
 }
+
+.done-task {
+    text-decoration: line-through;
+}
